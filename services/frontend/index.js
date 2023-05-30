@@ -36,7 +36,7 @@ function newBook(book) {
 }
 
 function calculateShipping(id, cep) {
-    fetch('http://localhost:3000/shipping/' + cep)
+    fetch('https://viniguim4-scaling-orbit-pxrq455xq76c6jv7-3000.preview.app.github.dev/shipping/' + cep)
         .then((data) => {
             if (data.ok) {
                 return data.json();
@@ -55,7 +55,7 @@ function calculateShipping(id, cep) {
 document.addEventListener('DOMContentLoaded', function () {
     const books = document.querySelector('.books');
 
-    fetch('http://localhost:3000/products')
+    fetch('https://viniguim4-scaling-orbit-pxrq455xq76c6jv7-3000.preview.app.github.dev/products')
         .then((data) => {
             if (data.ok) {
                 return data.json();
